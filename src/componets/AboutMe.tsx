@@ -4,7 +4,7 @@ function AboutMe() {
     <div className="flex items-center justify-between my-[5rem] text-stone-700 px-[10rem]">
       <div className="mb-9">
         <img
-          src="/public/Profile pics.jpg"
+          src="/Profile pics.jpg"
           alt=""
           className="w-[15rem] h-[20rem] rounded-[100px]"
         />

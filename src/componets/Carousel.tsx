@@ -26,7 +26,7 @@ const projects: projectsType[] = [
     link: "https://unepopcorn.vercel.app/",
     description:
       "Wild Oasis is a comprehensive hotel management application designed to streamline hotel operations and enhance guest experiences. The platform enables hotels to manage reservations, check-ins, and check-outs with ease, while also handling room assignments and inventory. ",
-    img: "/public/wildO.png",
+    img: "/wildO.png",
     stack: "React TypeScript, supabase, React query, react form",
   },
   {
@@ -34,7 +34,7 @@ const projects: projectsType[] = [
     link: "https://hrms-dashboard.netlify.app",
     description:
       "HRMS is an all-in-one HR management application designed to streamline employee management processes. The platform allows HR teams to manage employee records, track attendance, and oversee payroll and benefits",
-    img: "/public/hr mangement.png",
+    img: "/hr mangement.png",
     stack: "Angular, Bootstrap, laravel",
   },
   {
@@ -42,7 +42,7 @@ const projects: projectsType[] = [
     link: "https://unepopcorn.vercel.app/",
     description:
       "Wild Oasis is an easy-to-use hotel booking website that helps travelers find their perfect getaway in stunning natural locations. The platform offers a curated selection of hotels, resorts, and eco-lodges, focusing on properties nestled in serene landscapes.",
-    img: "/public/The wild oasis.png",
+    img: "/The wild oasis.png",
     stack: "NextJs TypeScript, supabase",
   },
   {
@@ -50,7 +50,7 @@ const projects: projectsType[] = [
     link: "https://unepopcorn.vercel.app/",
     description:
       "PizzaHub is a user-friendly application that allows customers to explore and order from a variety of pizza types. With an intuitive interface, users can browse through different pizza styles—whether classic, gourmet, or customizable.",
-    img: "/public/fast pizza.png",
+    img: "/fast pizza.png",
     stack: "NextJs TypeScript, supabase",
   },
 
@@ -59,7 +59,7 @@ const projects: projectsType[] = [
     link: "https://unepopcorn.vercel.app/",
     description:
       "Usepopcorn is an exciting movie website that offers users a seamless way to discover the latest films and timeless classics. ",
-    img: "/public/usepopcorn.png",
+    img: "/usepopcorn.png",
     stack: "React TypeScript",
   },
   // {
