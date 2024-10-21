@@ -17,6 +17,7 @@ type projectsType = {
   link: string;
   description: string;
   img: string;
+  stack: string;
 };
 
 const projects: projectsType[] = [
@@ -24,29 +25,42 @@ const projects: projectsType[] = [
     name: "Wild oasis",
     link: "https://unepopcorn.vercel.app/",
     description:
-      "Uppcoen applicaton is site where you can search for movies of various types",
+      "Wild Oasis is a comprehensive hotel management application designed to streamline hotel operations and enhance guest experiences. The platform enables hotels to manage reservations, check-ins, and check-outs with ease, while also handling room assignments and inventory. ",
     img: "/public/wildO.png",
+    stack: "React TypeScript, supabase, React query, react form",
   },
   {
     name: "HR Management",
     link: "https://hrms-dashboard.netlify.app",
     description:
-      "Uppcoen applicaton is site where you can search for movies of various types",
-    img: "/public/HRMS.png",
+      "HRMS is an all-in-one HR management application designed to streamline employee management processes. The platform allows HR teams to manage employee records, track attendance, and oversee payroll and benefits",
+    img: "/public/hr mangement.png",
+    stack: "Angular, Bootstrap, laravel",
   },
   {
     name: "The wild Oasis",
     link: "https://unepopcorn.vercel.app/",
     description:
-      "Uppcoen applicaton is site where you can search for movies of various types",
+      "Wild Oasis is an easy-to-use hotel booking website that helps travelers find their perfect getaway in stunning natural locations. The platform offers a curated selection of hotels, resorts, and eco-lodges, focusing on properties nestled in serene landscapes.",
     img: "/public/The wild oasis.png",
+    stack: "NextJs TypeScript, supabase",
   },
+  {
+    name: "Fast Pizza",
+    link: "https://unepopcorn.vercel.app/",
+    description:
+      "PizzaHub is a user-friendly application that allows customers to explore and order from a variety of pizza types. With an intuitive interface, users can browse through different pizza styles—whether classic, gourmet, or customizable.",
+    img: "/public/fast pizza.png",
+    stack: "NextJs TypeScript, supabase",
+  },
+
   {
     name: "Uppcorn",
     link: "https://unepopcorn.vercel.app/",
     description:
-      "Uppcoen applicaton is site where you can search for movies of various types",
+      "Usepopcorn is an exciting movie website that offers users a seamless way to discover the latest films and timeless classics. ",
     img: "/public/usepopcorn.png",
+    stack: "React TypeScript",
   },
   // {
   //   name: "Uppcorn",
@@ -68,9 +82,9 @@ export function CarouselSize() {
       opts={{
         align: "start",
       }}
-      className="w-full px-[10rem]"
+      className="w-full px-[15rem]"
     >
-      <CarouselContent className="w-full flex">
+      <CarouselContent className="w-full flex h-[37rem]">
         {projects.map((project, index) => (
           <CarouselItem
             key={index}
@@ -82,7 +96,7 @@ export function CarouselSize() {
                   <div>
                     <img src={project.img} alt="" />
                     <div className="flex justify-between p-5">
-                      <p>Fast react pizza</p>
+                      <p className="mt-3 font-semibold">{project.name}</p>
                       <div>
                         <AboutProject
                           description={project.description}
@@ -92,6 +106,9 @@ export function CarouselSize() {
                       </div>
                       {/* <a href="https://unepopcorn.vercel.app/">About pro</a> */}
                     </div>
+                    <p className="px-3 font-normal">
+                      Stack include : {project.stack}
+                    </p>
                   </div>
                 </CardContent>
               </Card>
@@ -99,8 +116,8 @@ export function CarouselSize() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="ml-[8rem]" />
-      <CarouselNext className="mr-[8rem]" />
+      <CarouselPrevious className="ml-[12rem]" />
+      <CarouselNext className="mr-[12rem]" />
     </Carousel>
   );
 }
