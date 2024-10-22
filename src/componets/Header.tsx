@@ -1,14 +1,12 @@
 function Header() {
   return (
-    <div className="flex justify-between p-3 px-20 text-[1.5rem] py-16">
-      <div className="text-stone-500 from-cyan-200 to-blue-400 ">
+    <div className="flex justify-between sm:px-20 text-[1.5rem] py-16">
+      <div className="hidden md:block text-stone-500 from-cyan-200 to-blue-400 ">
         Stpehen Eniola
       </div>
-      <ul className="flex gap-3 text-white">
+      <ul className="px-3 flex justify-end gap-4 md:justify-between w-full md:w-[25rem] items-center text-white">
         <li>About</li>
-        <li>Services</li>
         <li>Project</li>
-        <li>Experenice</li>
         <li>Contact</li>
       </ul>
     </div>

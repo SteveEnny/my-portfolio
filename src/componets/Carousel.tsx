@@ -82,13 +82,13 @@ export function CarouselSize() {
       opts={{
         align: "start",
       }}
-      className="w-full px-4 md:px-[5rem] lg:px-[9rem] xl:px-[10rem] border md:h-[20rem] lg:h-[30rem]"
+      className="w-full px-4 md:px-[5rem] lg:px-[9rem] xl:px-[10rem] md:h-[20rem] lg:h-[30rem]"
     >
-      <CarouselContent className="w-full flex lg:gap-5 h-[37rem]">
+      <CarouselContent className="w-full flex lg:gap-5 h-[30rem] sm:h-[37rem] md:h-[37rem]">
         {projects.map((project, index) => (
           <CarouselItem
             key={index}
-            className="sm:basis-1/2 lg:basis-[50%] xl:basis-[32%]"
+            className="sm:basis-1/2 lg:basis-[50%] xl:basis-[33%]"
           >
             <div className="p-1">
               <Card className="md:w-[20rem] lg:w-[28rem] xl:w-[30rem]">
