@@ -1,7 +1,7 @@
 // import profile from "../assets/images/profile.jpg";
 function AboutMe() {
   return (
-    <div className="flex items-center justify-between my-[5rem] text-stone-700 px-[10rem]">
+    <div className="flex flex-col lg:flex-row items-center justify-between my-[5rem] text-stone-700 md:px-[5rem] lg:px-[10rem] xl:px-[20rem]">
       <div className="mb-9">
         <img
           src="/Profile pics.jpg"
@@ -10,10 +10,10 @@ function AboutMe() {
         />
       </div>
       <div className="">
-        <h2 className="font-bold text-3xl text-stone-700 mb-6 ">
+        <h2 className="font-bold text-3xl text-stone-700 mb-6 mx-5 text-center lg:text-left">
           Hi, I'm Stephen Eniola
         </h2>
-        <p className="text-lg text-balance font-medium mb-5 w-[45rem] text-center">
+        <p className="text-lg text-balance font-medium mb-5 px-3 w-[25rem] sm:w-[45rem] text-center">
           I'm a web developer, Specialize in creating user solution. I've
           experirnce working with various front end developemt tools. to build
           variou applicatons. my goal as a develpeor is to develpo, solve and

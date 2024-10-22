@@ -21,14 +21,14 @@ type projectsType = {
 };
 
 const projects: projectsType[] = [
-  {
-    name: "Wild oasis",
-    link: "https://unepopcorn.vercel.app/",
-    description:
-      "Wild Oasis is a comprehensive hotel management application designed to streamline hotel operations and enhance guest experiences. The platform enables hotels to manage reservations, check-ins, and check-outs with ease, while also handling room assignments and inventory. ",
-    img: "/wildO.png",
-    stack: "React TypeScript, supabase, React query, react form",
-  },
+  // {
+  //   name: "Wild oasis",
+  //   link: "https://unepopcorn.vercel.app/",
+  //   description:
+  //     "Wild Oasis is a comprehensive hotel management application designed to streamline hotel operations and enhance guest experiences. The platform enables hotels to manage reservations, check-ins, and check-outs with ease, while also handling room assignments and inventory. ",
+  //   img: "/wildO.png",
+  //   stack: "React TypeScript, supabase, React query, react form",
+  // },
   {
     name: "HR Management",
     link: "https://hrms-dashboard.netlify.app",
@@ -39,7 +39,7 @@ const projects: projectsType[] = [
   },
   {
     name: "The wild Oasis",
-    link: "https://unepopcorn.vercel.app/",
+    link: "https://the-wild-oasis-user-two.vercel.app/",
     description:
       "Wild Oasis is an easy-to-use hotel booking website that helps travelers find their perfect getaway in stunning natural locations. The platform offers a curated selection of hotels, resorts, and eco-lodges, focusing on properties nestled in serene landscapes.",
     img: "/The wild oasis.png",
@@ -47,7 +47,7 @@ const projects: projectsType[] = [
   },
   {
     name: "Fast Pizza",
-    link: "https://unepopcorn.vercel.app/",
+    link: "https://fast-pizza-aygz.vercel.app",
     description:
       "PizzaHub is a user-friendly application that allows customers to explore and order from a variety of pizza types. With an intuitive interface, users can browse through different pizza styles—whether classic, gourmet, or customizable.",
     img: "/fast pizza.png",
@@ -82,16 +82,16 @@ export function CarouselSize() {
       opts={{
         align: "start",
       }}
-      className="w-full px-[15rem]"
+      className="w-full px-4 md:px-[5rem] lg:px-[9rem] xl:px-[10rem] border md:h-[20rem] lg:h-[30rem]"
     >
-      <CarouselContent className="w-full flex h-[37rem]">
+      <CarouselContent className="w-full flex lg:gap-5 h-[37rem]">
         {projects.map((project, index) => (
           <CarouselItem
             key={index}
-            className="md:basis-1/2 lg:basis-1/2 w-[20rem]"
+            className="sm:basis-1/2 lg:basis-[50%] xl:basis-[32%]"
           >
             <div className="p-1">
-              <Card className="w-[30rem]">
+              <Card className="md:w-[20rem] lg:w-[28rem] xl:w-[30rem]">
                 <CardContent className="flex aspect-square items-center justify-center p-6 pt-1">
                   <div>
                     <img src={project.img} alt="" />
@@ -116,8 +116,8 @@ export function CarouselSize() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="ml-[12rem]" />
-      <CarouselNext className="mr-[12rem]" />
+      <CarouselPrevious className="hidden sm:block md:ml-[5rem] ml-[10rem]" />
+      <CarouselNext className="hidden sm:block md:mr-[5rem] mr-[10rem]" />
     </Carousel>
   );
 }
