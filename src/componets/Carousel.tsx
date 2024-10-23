@@ -105,6 +105,7 @@ export function CarouselSize() {
                       <div>
                         <AboutProject
                           description={project.description}
+                          githubLink={project.gitbubLink}
                           link={project.link}
                           key={index}
                         />

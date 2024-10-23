@@ -8,9 +8,11 @@ import {
 export function AboutProject({
   description,
   link,
+  githubLink,
 }: {
   description: string;
   link: string;
+  githubLink: string;
 }) {
   return (
     <HoverCard>
@@ -33,7 +35,10 @@ export function AboutProject({
                 </a>
               </span>
               <span className="text-xs text-muted-foreground">
-                <a href={link} className="text-blue-600 hover:text-blue-400">
+                <a
+                  href={githubLink}
+                  className="text-blue-600 hover:text-blue-400"
+                >
                   Github link
                 </a>
               </span>

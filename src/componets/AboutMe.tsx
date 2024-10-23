@@ -1,7 +1,12 @@
+import { Ref } from "react";
+
 // import profile from "../assets/images/profile.jpg";
-function AboutMe() {
+function AboutMe({ about }: { about: Ref<HTMLDivElement> }) {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between my-[5rem] text-stone-700 md:px-[5rem] lg:px-[10rem] xl:px-[20rem]">
+    <div
+      ref={about}
+      className="flex flex-col lg:flex-row items-center justify-between my-[5rem] text-stone-700 md:px-[5rem] lg:px-[10rem] xl:px-[20rem]"
+    >
       <div className="mb-9">
         <img
           src="/Profile pics.jpg"
