@@ -18,6 +18,7 @@ type projectsType = {
   description: string;
   img: string;
   stack: string;
+  gitbubLink: string;
 };
 
 const projects: projectsType[] = [
@@ -36,6 +37,7 @@ const projects: projectsType[] = [
       "HRMS is an all-in-one HR management application designed to streamline employee management processes. The platform allows HR teams to manage employee records, track attendance, and oversee payroll and benefits",
     img: "/hr mangement.png",
     stack: "Angular, Bootstrap, laravel",
+    gitbubLink: "https://github.com/Oluwabambi/HRMS-frontend",
   },
   {
     name: "The wild Oasis",
@@ -44,6 +46,7 @@ const projects: projectsType[] = [
       "Wild Oasis is an easy-to-use hotel booking website that helps travelers find their perfect getaway in stunning natural locations. The platform offers a curated selection of hotels, resorts, and eco-lodges, focusing on properties nestled in serene landscapes.",
     img: "/The wild oasis.png",
     stack: "NextJs TypeScript, supabase",
+    gitbubLink: "https://github.com/SteveEnny/The-wild-oasis-user",
   },
   {
     name: "Fast Pizza",
@@ -52,15 +55,17 @@ const projects: projectsType[] = [
       "PizzaHub is a user-friendly application that allows customers to explore and order from a variety of pizza types. With an intuitive interface, users can browse through different pizza styles—whether classic, gourmet, or customizable.",
     img: "/fast pizza.png",
     stack: "NextJs TypeScript, supabase",
+    gitbubLink: "https://github.com/SteveEnny/Fast-pizza",
   },
 
   {
-    name: "Uppcorn",
+    name: "Usepcorn",
     link: "https://unepopcorn.vercel.app/",
     description:
       "Usepopcorn is an exciting movie website that offers users a seamless way to discover the latest films and timeless classics. ",
     img: "/usepopcorn.png",
     stack: "React TypeScript",
+    gitbubLink: "https://github.com/SteveEnny/unepopcorn",
   },
   // {
   //   name: "Uppcorn",

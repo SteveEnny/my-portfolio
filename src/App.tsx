@@ -24,10 +24,10 @@ function App() {
           <div className="flex items-center gap-3">
             <HiMail />
             <a
-              href="omotosoeniola2@gmail.com"
+              href="mailto:omotosoeniola2@gmail.com"
               className="text-blue-400 hover:text-blue-600"
             >
-              omotosoeniola2@gmail.com
+              Send a mail
             </a>
           </div>
         </div>
