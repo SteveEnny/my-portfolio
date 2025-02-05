@@ -8,7 +8,7 @@ function Projects({ project }: { project: Ref<HTMLDivElement> }) {
         <h2 className="text-[1.5rem]">Projects</h2>
       </div>
       <h3 className="text-[1rem] font-medium px-3 my-5">
-        I have work with many poject but here are my recent project
+        I have worked on some few pojects but here are my recent projects
       </h3>
       <CarouselSize />
     </div>
