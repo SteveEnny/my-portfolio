@@ -41,7 +41,7 @@ const projects: projectsType[] = [
   },
   {
     name: "The wild Oasis",
-    link: "https://the-wild-oasis-user-two.vercel.app/",
+    link: "https://the-wild-oasis-typescript-based.vercel.app/",
     description:
       "Wild Oasis is an easy-to-use hotel booking website that helps travelers find their perfect getaway in stunning natural locations. The platform offers a curated selection of hotels, resorts, and eco-lodges, focusing on properties nestled in serene landscapes.",
     img: "/The wild oasis.png",
